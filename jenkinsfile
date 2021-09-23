@@ -34,6 +34,13 @@ pipeline {
                 }
             
         }
+        stage('acceptance'){
+            steps{
+                input('do u want to proceed?')
+            }
+            
+        }
+         
         
         stage('deploy'){
             steps{
